@@ -442,7 +442,7 @@
         "com.unity.xr.openxr": "1.7.0",
         "com.unity.nuget.newtonsoft-json": "3.0.1"
       },
-      "hash": "88e9b6b1ff6b2720815e6e86561dbe05b26aaee6"
+      "hash": "bf66c5fccb6f57627606c00355b7e2b033cac664"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
