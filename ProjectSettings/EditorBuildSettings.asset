@@ -14,12 +14,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Packages/ubc.ok.ovilab.roadmapauthoring/Assets/Scenes/VR_Scene.unity
     guid: 99c9720ab356a0642a771bea13969a76
-  - enabled: 0
-    path: Assets/Roadmap.Generated/Scenes/generated_AR_Scene.unity
-    guid: 36c05d249d18fd743af1e420c48bb808
   - enabled: 1
+    path: Assets/Roadmap.Generated/Scenes/generated_AR_Scene.unity
+    guid: 79da465251be84fd1b2d10b2811ab2c4
+  - enabled: 0
     path: Assets/Roadmap.Generated/Scenes/generated_VR_Scene.unity
-    guid: ce536cb1363812546bb8718e7e1b7d8f
+    guid: 4a8fcef7b386841e8a084b60d0d709c7
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 507327ded4aa4ac498f3327522f06b83,
       type: 2}

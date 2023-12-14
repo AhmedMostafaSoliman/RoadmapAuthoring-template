@@ -77,4 +77,5 @@ MonoBehaviour:
   m_AutomaticLoading: 0
   m_AutomaticRunning: 0
   m_Loaders:
+  - {fileID: 11400000, guid: b8b98e359bcee6642ac002d28b6c4489, type: 2}
   - {fileID: 11400000, guid: 9564a6e3e732ec14c976497b751b46c8, type: 2}
