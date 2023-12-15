@@ -46,7 +46,7 @@ PlayerSettings:
   defaultScreenHeight: 768
   defaultScreenWidthWeb: 960
   defaultScreenHeightWeb: 600
-  m_StereoRenderingPath: 0
+  m_StereoRenderingPath: 2
   m_ActiveColorSpace: 1
   m_SpriteBatchVertexThreshold: 300
   m_MTRendering: 1
@@ -137,12 +137,12 @@ PlayerSettings:
   loadStoreDebugModeEnabled: 0
   bundleVersion: 0.1.0
   preloadedAssets:
-  - {fileID: 4800000, guid: c9f956787b1d945e7b36e0516201fc76, type: 3}
-  - {fileID: 4800000, guid: 0945859e5a1034c2cb6dce53cb4fb899, type: 3}
+  - {fileID: 11400000, guid: 04963d2a95452c14bbeb9c5b8e88483e, type: 2}
   - {fileID: 11400000, guid: c677e5c4eb85b7849a8da406775c299d, type: 2}
+  - {fileID: 11400000, guid: 507327ded4aa4ac498f3327522f06b83, type: 2}
   - {fileID: -6196245733598661307, guid: 88086cdb92b22274c8422c0b7d9f3c3f, type: 2}
+  - {fileID: -7056620544563824530, guid: b798737acdb4d2a47b856a3b1f5cdb70, type: 2}
   - {fileID: 11400000, guid: d36d9b5afc2914546b2dd3c3caff9796, type: 2}
-  - {fileID: -2055295541353755003, guid: b798737acdb4d2a47b856a3b1f5cdb70, type: 2}
   - {fileID: 11400000, guid: 3b252cebe017709479dfef27ddbe93e6, type: 2}
   - {fileID: 11400000, guid: b10936b52578156469ea4ba51032a93b, type: 2}
   metroInputSource: 0
@@ -176,7 +176,7 @@ PlayerSettings:
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 29
   AndroidTargetSdkVersion: 0
-  AndroidPreferredInstallLocation: 1
+  AndroidPreferredInstallLocation: 0
   aotOptions: 
   stripEngineCode: 1
   iPhoneStrippingLevel: 0
@@ -525,6 +525,9 @@ PlayerSettings:
     m_Automatic: 1
   - m_BuildTarget: AndroidPlayer
     m_APIs: 0b000000
+    m_Automatic: 0
+  - m_BuildTarget: WindowsStandaloneSupport
+    m_APIs: 02000000
     m_Automatic: 0
   m_BuildTargetVRSettings: []
   m_DefaultShaderChunkSizeInMB: 16
