@@ -28,3 +28,6 @@ MonoBehaviour:
   - identifier: berry2
     prefab: {fileID: 7923985274299518488, guid: 44be7c25850fd41259cb0361a8f718b0,
       type: 3}
+  - identifier: bush
+    prefab: {fileID: 7728764200562407057, guid: 90a9be8c580704e6da51ab02c8a1105e,
+      type: 3}
