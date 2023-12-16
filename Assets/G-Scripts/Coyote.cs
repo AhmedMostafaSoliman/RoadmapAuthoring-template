@@ -51,7 +51,7 @@ public class Coyote : MonoBehaviour
 
 
         coyoteMove();
-        sprint();
+        //sprint();
     }
 
     void coyoteMove()

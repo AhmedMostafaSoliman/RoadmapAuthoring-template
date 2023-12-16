@@ -22,5 +22,26 @@ MonoBehaviour:
   - identifier: Lander
     prefab: {fileID: 100018, guid: f9a8072f5d9b92347a999f10f01b8012, type: 3}
   - identifier: coyote
-    prefab: {fileID: 3509435335558247667, guid: ef91d1fc577965d438dfdc9a5defbfd6,
+    prefab: {fileID: 8462896843378381208, guid: b386c75fed8954045a889a2e113d1c0a,
+      type: 3}
+  - identifier: Text3D
+    prefab: {fileID: 1407516759571644476, guid: 332e1ae91c895f04e868ebc105ebb600,
+      type: 3}
+  - identifier: BitterRoot1
+    prefab: {fileID: 3073248490281434966, guid: c458b687625a69e4580923ea7e0e8f8e,
+      type: 3}
+  - identifier: Character
+    prefab: {fileID: 4346050851456405955, guid: 04386678fd26fb34488a0be0c399dfc2,
+      type: 3}
+  - identifier: BitterRoot2
+    prefab: {fileID: 7523691129155043974, guid: cfaf5961b6efc5f428df55a2f80deb36,
+      type: 3}
+  - identifier: Water
+    prefab: {fileID: 2888467284349933502, guid: e024fb0b59b222244bc5485a19bed879,
+      type: 3}
+  - identifier: Kacoe
+    prefab: {fileID: 5135863656894482443, guid: d43883e15076ea2429e7781cf1a1735f,
+      type: 3}
+  - identifier: campfire
+    prefab: {fileID: 8266446993749127865, guid: 565ee07bd0be83342a59e1400aa4aee5,
       type: 3}
