@@ -1,32 +1,31 @@
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
-public class BerrySelector : MonoBehaviour
+public class BerryInteraction : MonoBehaviour
 {
-    void Update()
+    private XRGrabInteractable grabInteractable;
+
+    void Awake()
     {
-        if (Input.GetMouseButtonDown(0)) // 0 is the left mouse button
+        grabInteractable = GetComponent<XRGrabInteractable>();
+        grabInteractable.onSelectEntered.AddListener(HandleGrab);
+    }
+
+    private void HandleGrab(XRBaseInteractor interactor)
+    {
+        // Check the tag to provide specific feedback
+        if (gameObject.CompareTag("GoodBerry"))
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit))
-            {
-                if (hit.collider != null)
-                {
-                    GameObject selectedObject = hit.collider.gameObject;
-
-                    if (selectedObject.tag == "GoodBerry")
-                    {
-                        Debug.Log("Good berry selected!");
-                        // Implement what happens when a good berry is selected
-                    }
-                    else if (selectedObject.tag == "WormyBerry")
-                    {
-                        Debug.Log("Wormy berry selected! Avoid this.");
-                        // Implement what happens when a wormy berry is selected
-                    }
-                }
-            }
+            Debug.Log("Good berry (ttikwtkwt) picked: " + gameObject.name);
         }
+        else if (gameObject.CompareTag("WormyBerry"))
+        {
+            Debug.Log("Wormy berry (skksalaʔq) picked: " + gameObject.name);
+        }
+
+        // Disable the berry object (to simulate picking it)
+        gameObject.SetActive(false);
     }
 }
+
+

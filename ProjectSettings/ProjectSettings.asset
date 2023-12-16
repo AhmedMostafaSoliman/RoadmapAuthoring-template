@@ -8,7 +8,7 @@ PlayerSettings:
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
-  defaultScreenOrientation: 0
+  defaultScreenOrientation: 3
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
@@ -139,12 +139,13 @@ PlayerSettings:
   preloadedAssets:
   - {fileID: 4800000, guid: c9f956787b1d945e7b36e0516201fc76, type: 3}
   - {fileID: 4800000, guid: 0945859e5a1034c2cb6dce53cb4fb899, type: 3}
+  - {fileID: 11400000, guid: b10936b52578156469ea4ba51032a93b, type: 2}
   - {fileID: 11400000, guid: c677e5c4eb85b7849a8da406775c299d, type: 2}
-  - {fileID: -6196245733598661307, guid: 88086cdb92b22274c8422c0b7d9f3c3f, type: 2}
+  - {fileID: 11400000, guid: 507327ded4aa4ac498f3327522f06b83, type: 2}
   - {fileID: 11400000, guid: d36d9b5afc2914546b2dd3c3caff9796, type: 2}
   - {fileID: -2055295541353755003, guid: b798737acdb4d2a47b856a3b1f5cdb70, type: 2}
+  - {fileID: -6196245733598661307, guid: 88086cdb92b22274c8422c0b7d9f3c3f, type: 2}
   - {fileID: 11400000, guid: 3b252cebe017709479dfef27ddbe93e6, type: 2}
-  - {fileID: 11400000, guid: fd96b9dfce03d56469ace9aa0ffb3ef8, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1

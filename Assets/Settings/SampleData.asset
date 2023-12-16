@@ -17,7 +17,14 @@ MonoBehaviour:
   groupID: fa8d893c-b4d4-449b-8285-7a7e16f925c5
   boundingBoxWithHandlesPrefab: {fileID: 5671351296789090341, guid: 7b542306e34a62f4c9a822fcb19b7d99,
     type: 3}
-  stateChanged: 1
+  stateChanged: 0
   placables:
-  - identifier: Lander
-    prefab: {fileID: 100018, guid: f9a8072f5d9b92347a999f10f01b8012, type: 3}
+  - identifier: berrywormy
+    prefab: {fileID: 3695475092174521166, guid: 139b62db5b58b4b51a3992f31e08a240,
+      type: 3}
+  - identifier: berry1
+    prefab: {fileID: 7330656291063040178, guid: 38b4b2cda16524cb5af5bb46922f1d7e,
+      type: 3}
+  - identifier: berry2
+    prefab: {fileID: 7923985274299518488, guid: 44be7c25850fd41259cb0361a8f718b0,
+      type: 3}
