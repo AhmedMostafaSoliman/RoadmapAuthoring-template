@@ -46,6 +46,8 @@ public class Coyote : MonoBehaviour
     }
     void Update()
     {
+        // get the grip value of the right controller
+        //if (_inputData._rightController.TryGetFeatureValue(CommonUsages.gripButton, out bool gripValue) && gripValue)
         if (_inputData._rightController.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 rightStick))
         {
             x[curframe] = rightStick.x;
@@ -86,7 +88,7 @@ public class Coyote : MonoBehaviour
             Vector3 moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             cc.Move(moveDirection.normalized * coyoteSpeed * Time.deltaTime);
             // apply a transform to the object itself too
-            transform.Translate(moveDirection.normalized * coyoteSpeed * Time.deltaTime, Space.World);
+            //transform.Translate(moveDirection.normalized * coyoteSpeed * Time.deltaTime, Space.World);
         }
         else
         {

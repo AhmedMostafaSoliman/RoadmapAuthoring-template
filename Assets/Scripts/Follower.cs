@@ -1,24 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
 using PathCreation;
 
 public class Follower : MonoBehaviour
 {
     public PathCreator pathCreator;
-    public float speed = 5;
+    public float speed = 1;
     float distanceTravelled;
 
     private Animator _animator;
 
+    public InputData _inputData;
+
+
     void Awake()
     {
         _animator = GetComponent<Animator>();
+        _inputData = FindObjectOfType<InputData>();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (_inputData._rightController.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue) && primaryButtonValue)
         {
             _animator.SetBool("Walk", true);
         }
