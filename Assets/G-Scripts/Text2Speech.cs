@@ -1,14 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using SpeechLib;
+//using SpeechLib;
 using System.Threading.Tasks;
 
 public class Text2Speech : MonoBehaviour
 {
     public GameObject showText;
 
-    SpVoice voice = new SpVoice();
+    //SpVoice voice = new SpVoice();
     string sentence = "Bitterroot has been used to treat fever, sore throat, cough, and other health issues. Sṕiƛəm teaches us about health and wellness. For more information, click button B.";
     // Update is called once per frame
     void Update()
@@ -16,7 +16,7 @@ public class Text2Speech : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.A))
         {
             showText.SetActive(true);
-            voice.Speak(sentence, SpeechVoiceSpeakFlags.SVSFlagsAsync | SpeechVoiceSpeakFlags.SVSFPurgeBeforeSpeak);
+            //voice.Speak(sentence, SpeechVoiceSpeakFlags.SVSFlagsAsync | SpeechVoiceSpeakFlags.SVSFPurgeBeforeSpeak);
             delayTimeNew();
         }
 
@@ -36,5 +36,14 @@ public class Text2Speech : MonoBehaviour
     public void sylixFactlink()
     {
         Application.OpenURL("https://www.syilx.org/about-us/syilx-nation/");
+    }
+
+
+
+
+    public void BitterRootTextShow()
+    {
+        showText.SetActive(true);
+        delayTimeNew();
     }
 }

@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class Coyote : MonoBehaviour
 {
+    float turnSpeed = 0.5f;
+    float movementSpeed = 0.5f;
+
     [Header("Coyote animation and gravity")]
     public CharacterController cc;
     public float gravity = -9.81f;
@@ -84,6 +87,33 @@ public class Coyote : MonoBehaviour
             animator.SetBool("Walk", false);
             animator.SetBool("Selection", false);
         }
+    }
+
+    private void TurnTowards(Vector3 towardsVector)
+    {
+        float singleStep = turnSpeed * Time.deltaTime;
+        Vector3 newDirection = Vector3.RotateTowards(transform.forward, towardsVector, singleStep, 0.0f);
+        transform.rotation = Quaternion.LookRotation(newDirection, transform.up);
+    }
+
+    public void TurnRight()
+    {
+        TurnTowards(transform.right);
+    }
+
+    public void TurnLeft()
+    {
+        TurnTowards(-transform.right);
+    }
+
+    public void MoveForward()
+    {
+        TurnTowards(transform.forward);
+    }
+
+    public void MoveBackwards()
+    {
+        TurnTowards(-transform.forward);
     }
 
     void sprint()
