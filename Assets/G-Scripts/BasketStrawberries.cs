@@ -16,7 +16,7 @@ public class BasketStrawberries : MonoBehaviour
     public PlayerScript player;
     private float radius = 3.5f;
 
-     
+    [SerializeField] private AudioSource berryAudio; 
 
 
     private void Awake()
@@ -24,6 +24,7 @@ public class BasketStrawberries : MonoBehaviour
         PlayerBerry.SetActive(false);
         DropBerry.SetActive(false);
         SalmonBadge.SetActive(false);
+        BerryBadge.SetActive(false);
     }
 
     public void DroppingBerries()
@@ -32,6 +33,7 @@ public class BasketStrawberries : MonoBehaviour
             
         if (Vector3.Distance(transform.position, player.transform.position) < radius)
         {
+            berryAudio.Play();
             PlayerBerry.SetActive(false);
             DropBerry.SetActive(true);
             BerryBadge.SetActive(true);

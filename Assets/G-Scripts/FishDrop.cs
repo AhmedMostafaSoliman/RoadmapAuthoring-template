@@ -15,6 +15,7 @@ public class FishDrop : MonoBehaviour
     public GameObject GroundSpear;
     public GameObject FishShowText;
 
+    [SerializeField] private AudioSource fishAudio;
 
     [Header("Fish Pick")]
     public PlayerScript player;
@@ -36,6 +37,7 @@ public class FishDrop : MonoBehaviour
 
         if (Vector3.Distance(transform.position, player.transform.position) < radius)
         {
+            fishAudio.Play();
             PlayerSpear.SetActive(true);
             PlayerFish.SetActive(false);
             FishInBasket.SetActive(true);

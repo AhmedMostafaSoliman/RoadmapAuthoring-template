@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 
+
 public class DropBitterRoot : MonoBehaviour
 {
     [Header("Berries")]
@@ -10,6 +11,8 @@ public class DropBitterRoot : MonoBehaviour
     public GameObject DropingBitterRoot;
     public GameObject BitterRootyBadge;
     public GameObject BitterRootShowText;
+
+    [SerializeField] private AudioSource bitterRootAudio;
 
     [Header("Berry assign things")]
     public PlayerScript player;
@@ -30,6 +33,7 @@ public class DropBitterRoot : MonoBehaviour
 
         if (Vector3.Distance(transform.position, player.transform.position) < radius)
         {
+            bitterRootAudio.Play();
             PlayerBitterRoot.SetActive(false);
             DropingBitterRoot.SetActive(true);
             BitterRootyBadge.SetActive(true);

@@ -13,16 +13,23 @@ public class BearScript : MonoBehaviour
     public GameObject BearBadge;
     public GameObject showText3;
 
+    [SerializeField] private AudioSource bearAudio;
+
+    private void Awake()
+    {
+        //BearBadge.SetActive(false);
+    }
+
     public void BearMethod()
     {
         if (Vector3.Distance(transform.position, player.transform.position) < radius1)
         {
-
+            
             BearShowText.SetActive(true);
             delayTimeNew();
             showText3.SetActive(true);
             delayTimeNew1();
-
+            bearAudio.Play();
         }
 
     }

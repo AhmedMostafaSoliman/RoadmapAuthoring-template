@@ -16,12 +16,14 @@ public class BitterRoot : MonoBehaviour
     public PlayerScript player;
     private float radius1 = 2.5f;
 
-
+    public GameObject IntroShowText;
 
 
     private void Awake()
     {
-        PlayerBitterRoot.SetActive(false);
+        IntroShowText.SetActive(true);
+        delayTimeNew2();
+        //PlayerBitterRoot.SetActive(false);
         BitterRootyBadge.SetActive(false);
     }
 
@@ -29,6 +31,8 @@ public class BitterRoot : MonoBehaviour
     {
         if (Vector3.Distance(transform.position, player.transform.position) < radius1)
         {
+            
+            
             PlayerBitterRoot.SetActive(true);
             PickupBitterRoot.SetActive(false);
             showText1.SetActive(true);
@@ -41,6 +45,13 @@ public class BitterRoot : MonoBehaviour
     {
         await Task.Delay((int)(10f * 1000));
         showText1.SetActive(false);
+
+    }
+
+    public async void delayTimeNew2()
+    {
+        await Task.Delay((int)(10f * 1000));
+        IntroShowText.SetActive(false);
 
     }
 }

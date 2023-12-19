@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 
+
 public class PickUpBerries : MonoBehaviour
 {
     [Header("Berries")]
@@ -16,19 +17,27 @@ public class PickUpBerries : MonoBehaviour
     public GameObject showText2;
 
 
+    public GameObject IntroShowText;
+
     [Header("Berry assign things")]
     public PlayerScript player;
     private float radius1 = 2.5f;
-    
 
+    
 
     private void Awake()
     {
+
+        
+
         PlayerBerry.SetActive(false);
         BerryBadge.SetActive(false);
         BearBadge.SetActive(false);
         BitterRootyBadge.SetActive(false);
         GroundSpear.SetActive(false);
+
+        IntroShowText.SetActive(true);
+        delayTimeNew2();
     }
 
     public void pickingBerries()
@@ -47,6 +56,13 @@ public class PickUpBerries : MonoBehaviour
     {
         await Task.Delay((int)(10f * 1000));
         showText2.SetActive(false);
+
+    }
+
+    public async void delayTimeNew2()
+    {
+        await Task.Delay((int)(10f * 1000));
+        IntroShowText.SetActive(false);
 
     }
 
